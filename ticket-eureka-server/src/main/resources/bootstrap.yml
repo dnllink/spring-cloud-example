@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: ticket-eureka-server
+  cloud:
+    config:
+      uri: http://ticket-config-server:8888
+      fail-fast: true
+      retry:
+        multiplier: 1.2
+        max-attempts: 12
+        max-interval: 5000
